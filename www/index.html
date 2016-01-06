@@ -78,6 +78,25 @@
                 },1500);
             });
         </script>
+        <script>
+            document.addEventListener("intel.xdk.device.ready", onDeviceReady, false);               
+            function onDeviceReady(){
+                //detect the current orientation of the device
+                if (intel.xdk.device.orientation == "90" || intel.xdk.device.orientation == "-90")
+                {
+                    //landscape
+                    // set orientation
+                    intel.xdk.device.setRotateOrientation('landscape');
+                }
+                else
+                {
+                    //portrait
+                    // set orientation
+                    intel.xdk.device.setRotateOrientation('potrait');
+                }
+                //intel.xdk.device.hideSplashScreen();   
+            }        
+    </script>
         <script type="application/javascript" src="lib/appframework.js"></script>
         <script type="application/javascript" src="js/index_user_scripts.js"></script>
         <script type="application/javascript" src="xdk/ad/af_subpage.js"></script>
@@ -144,23 +163,24 @@
                     <div class="widget uib_w_85 d-margins" data-uib="app_framework/input_group" data-ver="2">
                         <div class="formGroupHead">Date Verified by</div>
                         <div class="input-group">
-                            <div class="table-thing with-label widget uib_w_86" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_86 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">Last Update :</label>
+
                                 <input class="wide-control" type="date">
                             </div>
-                            <div class="table-thing with-label widget uib_w_87" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_87 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">Verification :</label>
                                 <input class="wide-control" type="date">
                             </div>
-                            <div class="table-thing with-label widget uib_w_88" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_88 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">Sent to Head Office :</label>
                                 <input class="wide-control" type="date">
                             </div>
-                            <div class="table-thing with-label widget uib_w_89 d-margins" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_89 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">Sent to Branch :</label>
                                 <input class="wide-control" type="date">
                             </div>
-                            <div class="table-thing with-label widget uib_w_90 d-margins" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_90 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">Sent to Off-Site :</label>
                                 <input class="wide-control" type="date">
                             </div>
@@ -185,27 +205,27 @@
                     <div class="widget uib_w_74 d-margins" data-uib="app_framework/input_group" data-ver="2">
                         <div class="formGroupHead">Name of Documents Guidelines</div>
                         <div class="input-group">
-                            <div class="table-thing with-label widget uib_w_98 d-margins" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_98 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">Name :</label>
                                 <input class="wide-control" placeholder="Insert Name" type="text">
                             </div>
-                            <div class="table-thing with-label widget uib_w_75" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_75 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">Date of Receipt :</label>
                                 <input class="wide-control" type="date">
                             </div>
-                            <div class="table-thing with-label widget uib_w_76" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_76 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">Author :</label>
                                 <input class="wide-control" placeholder="Insert Author" type="text">
                             </div>
-                            <div class="table-thing with-label widget uib_w_77" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_77 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">Custodian :</label>
                                 <input class="wide-control" placeholder="Insert Custodian" type="text">
                             </div>
-                            <div class="table-thing with-label widget uib_w_82 d-margins" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_82 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">On-Site Location :</label>
                                 <input class="wide-control" placeholder="Insert On-Site Location" type="text">
                             </div>
-                            <div class="table-thing with-label widget uib_w_83 d-margins" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_83 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">Off-Site Location :</label>
                                 <input class="wide-control" placeholder="Insert Off-Site Location" type="text">
                             </div>
@@ -233,27 +253,27 @@
                     <div class="widget uib_w_63 d-margins" data-uib="app_framework/input_group" data-ver="2">
                         <div class="formGroupHead">Name of Document Procedures</div>
                         <div class="input-group">
-                            <div class="table-thing with-label widget uib_w_97 d-margins" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_97 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">Name :</label>
                                 <input class="wide-control" placeholder="Insert Name" type="text">
                             </div>
-                            <div class="table-thing with-label widget uib_w_64" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_64 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">Date of Receipts :</label>
                                 <input class="wide-control" type="date">
                             </div>
-                            <div class="table-thing with-label widget uib_w_65" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_65 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">Author :</label>
                                 <input class="wide-control" placeholder="Insert Author" type="text">
                             </div>
-                            <div class="table-thing with-label widget uib_w_66" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_66 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">Custodian :</label>
                                 <input class="wide-control" placeholder="Insert Custodian" type="text">
                             </div>
-                            <div class="table-thing with-label widget uib_w_71 d-margins" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_71 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">On-Site Location :</label>
                                 <input class="wide-control" placeholder="Insert On-Site Location" type="text">
                             </div>
-                            <div class="table-thing with-label widget uib_w_72 d-margins" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_72 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">Off-Site Location :</label>
                                 <input class="wide-control" placeholder="Insert Off-Site Location" type="text">
                             </div>
@@ -281,27 +301,27 @@
                     <div class="widget uib_w_52 d-margins" data-uib="app_framework/input_group" data-ver="2">
                         <div class="formGroupHead">Name of Document Documents</div>
                         <div class="input-group">
-                            <div class="table-thing with-label widget uib_w_96 d-margins" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_96 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">Name :</label>
                                 <input class="wide-control" placeholder="Insert Name" type="text">
                             </div>
-                            <div class="table-thing with-label widget uib_w_53" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_53 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">Date of Receipt :</label>
                                 <input class="wide-control" type="date">
                             </div>
-                            <div class="table-thing with-label widget uib_w_54" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_54 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">Author :</label>
                                 <input class="wide-control" placeholder="Insert Author" type="text">
                             </div>
-                            <div class="table-thing with-label widget uib_w_55" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_55 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">Custodian :</label>
                                 <input class="wide-control" placeholder="Insert Custodian" type="text">
                             </div>
-                            <div class="table-thing with-label widget uib_w_56 d-margins" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_56 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">On-Site Location :</label>
                                 <input class="wide-control" placeholder="Insert On-Site Location" type="text">
                             </div>
-                            <div class="table-thing with-label widget uib_w_57 d-margins" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_57 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">Off-Site Location :</label>
                                 <input class="wide-control" placeholder="Insert Off-Site Location" type="text">
                             </div>
@@ -329,27 +349,27 @@
                     <div class="widget uib_w_41 d-margins" data-uib="app_framework/input_group" data-ver="2">
                         <div class="formGroupHead">Name of Document Agreements</div>
                         <div class="input-group">
-                            <div class="table-thing with-label widget uib_w_95 d-margins" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_95 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">Name :</label>
                                 <input class="wide-control" placeholder="Insert Name" type="text">
                             </div>
-                            <div class="table-thing with-label widget uib_w_42" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_42 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">Date of Receipt :</label>
                                 <input class="wide-control" type="date">
                             </div>
-                            <div class="table-thing with-label widget uib_w_43" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_43 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">Author :</label>
                                 <input class="wide-control" placeholder="Insert Author" type="text">
                             </div>
-                            <div class="table-thing with-label widget uib_w_44" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_44 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">Custodian :</label>
                                 <input class="wide-control" placeholder="Insert Custodian" type="text">
                             </div>
-                            <div class="table-thing with-label widget uib_w_45 d-margins" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_45 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">On-Site Location :</label>
                                 <input class="wide-control" placeholder="Insert On-Site Location" type="text">
                             </div>
-                            <div class="table-thing with-label widget uib_w_46 d-margins" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_46 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">Off-Site Location :</label>
                                 <input class="wide-control" placeholder="Insert Off-Site Location" type="text">
                             </div>
@@ -377,27 +397,27 @@
                     <div class="widget uib_w_30 d-margins" data-uib="app_framework/input_group" data-ver="2">
                         <div class="formGroupHead">Name of Document Plans</div>
                         <div class="input-group">
-                            <div class="table-thing with-label widget uib_w_94 d-margins" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_94 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">Name :</label>
                                 <input class="wide-control" placeholder="Insert Name" type="text">
                             </div>
-                            <div class="table-thing with-label widget uib_w_31" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_31 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">Date of Receipt :</label>
                                 <input class="wide-control" type="date">
                             </div>
-                            <div class="table-thing with-label widget uib_w_32" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_32 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">Author</label>
                                 <input class="wide-control" placeholder="Insert Author" type="text">
                             </div>
-                            <div class="table-thing with-label widget uib_w_33" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_33 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">Custodian :</label>
                                 <input class="wide-control" placeholder="Insert Custodian" type="text">
                             </div>
-                            <div class="table-thing with-label widget uib_w_34 d-margins" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_34 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">On-Site Location :</label>
                                 <input class="wide-control" placeholder="Insert On-Site Location" type="text">
                             </div>
-                            <div class="table-thing with-label widget uib_w_35 d-margins" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_35 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">Off-Site Location :</label>
                                 <input class="wide-control" placeholder="Insert Off-Site Location" type="text">
                             </div>
@@ -424,27 +444,27 @@
                     <div class="widget uib_w_19 d-margins" data-uib="app_framework/input_group" data-ver="2">
                         <div class="formGroupHead">Name of Document Manuals</div>
                         <div class="input-group">
-                            <div class="table-thing with-label widget uib_w_93 d-margins" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_93 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">Name :</label>
                                 <input class="wide-control" placeholder="Insert Name" type="text">
                             </div>
-                            <div class="table-thing with-label widget uib_w_20" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_20 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">Date of Receipt :</label>
                                 <input class="wide-control" type="date">
                             </div>
-                            <div class="table-thing with-label widget uib_w_21" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_21 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">Author :</label>
                                 <input class="wide-control" placeholder="Insert Author" type="text">
                             </div>
-                            <div class="table-thing with-label widget uib_w_22" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_22 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">Custodian :</label>
                                 <input class="wide-control" placeholder="Insert Custodian" type="text">
                             </div>
-                            <div class="table-thing with-label widget uib_w_23 d-margins" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_23 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">On-Site Location :</label>
                                 <input class="wide-control" placeholder="Insert On-Site Location" type="text">
                             </div>
-                            <div class="table-thing with-label widget uib_w_24 d-margins" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_24 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">Off-Site Location :</label>
                                 <input class="wide-control" placeholder="Insert Off-Site Location" type="text">
                             </div>
@@ -471,15 +491,16 @@
                     <div class="widget uib_w_10 d-margins" data-uib="app_framework/input_group" data-ver="2">
                         <div class="formGroupHead">INFORMATION</div>
                         <div class="input-group">
-                            <div class="table-thing with-label widget uib_w_11" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_11 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">Name of Office :</label>
+
                                 <input class="wide-control" placeholder="Insert Name of Office" type="text">
                             </div>
-                            <div class="table-thing with-label widget uib_w_12" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_12 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">Address :</label>
                                 <input class="wide-control" placeholder="Insert Address" type="text">
                             </div>
-                            <div class="table-thing with-label widget uib_w_13" data-uib="app_framework/input" data-ver="2">
+                            <div class="table-thing with-label widget uib_w_13 position" data-uib="app_framework/input" data-ver="2">
                                 <label class="narrow-control label-top-left">Phone No./E-Mail ID :</label>
                                 <input class="wide-control" placeholder="Insert Phone No./E-Mail ID" type="text">
                             </div>

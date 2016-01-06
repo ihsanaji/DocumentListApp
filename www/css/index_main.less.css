@@ -366,6 +366,9 @@ body#afui .splt {
     margin-bottom: 10px;
   }
 }
+.position {
+  width: 100%;
+}
 @media all {
   #afui .tengah p {
     text-align: center;
@@ -424,5 +427,17 @@ body#afui .splt {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+  }
+}
+@media all {
+  #afui .lebar > .narrow-control {
+    text-align: left;
+  }
+}
+@media all {
+  #afui .button_main {
+    height: 60px !important;
+    width: 60px !important;
+    border-radius: 100% !important;
   }
 }

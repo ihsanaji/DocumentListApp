@@ -42,52 +42,61 @@ body {
     background: white ;
     color: black ;
 }
-
+/*
 #mainpage {
+    overflow-y: scroll !important;
+    max-height: 100vh !important;
     verticalScroll:true;
     horizontalScroll:false;
     autoEnable:true;
+}*/
+
+#mainpage {
+    overflow-y: auto !important;
+    max-height: 100% !important;
 }
 
 #information {
-    verticalScroll:true;
-    horizontalScroll:false;
-    autoEnable:true;
+    overflow-y: auto !important;
+    max-height: 100% !important;
+}
+
+#about {
+    overflow-y: auto !important;
+    max-height: 100% !important;
 }
 
 #manuals {
-    verticalScroll:true;
-    horizontalScroll:false;
-    autoEnable:true;
+    overflow-y: auto !important;
+    max-height: 100% !important;
 }
 
 #plans {
-    verticalScroll:true;
-    horizontalScroll:false;
-    autoEnable:true;
+    overflow-y: auto !important;
+    max-height: 100% !important;
 }
 
 #agreements {
-    verticalScroll:true;
-    horizontalScroll:false;
-    autoEnable:true;
+    overflow-y: auto !important;
+    max-height: 100% !important;
 }
 
 #documents {
-    verticalScroll:true;
-    horizontalScroll:false;
-    autoEnable:true;
+    overflow-y: auto !important;
+    max-height: 100% !important;
 }
 
 #procedures {
-    verticalScroll:true;
-    horizontalScroll:false;
-    autoEnable:true;
+    overflow-y: auto !important;
+    max-height: 100% !important;
 }
 
 #guidelines{
-    verticalScroll:true;
-    horizontalScroll:false;
-    autoEnable:true;
+    overflow-y: auto !important;
+    max-height: 100% !important;
 }
 
+#verified{
+    overflow-y: auto !important;
+    max-height: 100% !important;
+}
