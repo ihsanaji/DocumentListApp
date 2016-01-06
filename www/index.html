@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+    <!--
+  * Please see the included README.md file for license terms and conditions.
+  -->
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="app_framework/3.0/af.ui.css" data-ver="2">
+        <link rel="stylesheet" type="text/css" href="app_framework/3.0/icons.min.css">
+        <title>Blank App Designer Cordova Web App Project Template</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+        <!--
+  * The "meta viewport" tag (below) helps your app size appropriately to a device's ideal viewport.
+  * Note that Windows device viewports work better when initialized using the @viewport CSS rule.
+  * For a quick overview of "meta viewport" and @viewport, see this article:
+  *   http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag
+  * To see how it works, try your app on a real device with and without a "meta viewport" tag.
+  * Additional useful references include:
+  *   http://www.quirksmode.org/mobile/viewports.html
+  *   http://www.quirksmode.org/mobile/metaviewport/devices.html
+  *   https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html
+-->
+
+        <!-- <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1"> -->
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1, maximum-scale=2"> -->
+
+        <style>
+            /* following three (cascaded) are equivalent to above three meta viewport statements */
+            /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html */
+            /* see http://dev.w3.org/csswg/css-device-adapt/ */
+                @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+                @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+                /*@-ms-viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }   @viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }*/
+        </style>
+
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+
+        <!-- IMPORTANT: Do not include a weinre script tag as part of your release builds! -->
+        <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work below -->
+        <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
+
+        <!-- Recommended location for your JavaScript libraries -->
+        <!-- These library references (below) are just examples to give you the general idea... -->
+        <!-- <script src="lib/mc/hammer.js"></script> -->
+        <!-- <script src="lib/ft/fastclick.js"></script> -->
+
+        <!--
+  * cordova.js is a phantom lib for "Cordova HTML5 web app," it does nothing in a "Standard HTML5 web app"
+  * Seeing a "Failed to load resource: net::ERR_FILE_NOT_FOUND" message caused by this "cordova.js" script?
+  * The cordova.js script is required if you convert your "Standard HTML5" project into a "Cordova" project.
+  * You can safely ignore the error or comment out this line if you will not be developing a Cordova app.
+-->
+        <script src="cordova.js" id="xdkJScordova_"></script>
+
+        <script src="js/app.js"></script>
+        <!-- for your event code, see README and file comments for details -->
+        <script src="js/init-app.js"></script>
+        <!-- for your init code, see README and file comments for details -->
+        <script src="xdk/init-dev.js"></script>
+        <!-- normalizes device and document ready events, see file for details -->
+        <!--            
+            You may substitute jQuery for the App Framework selector library.
+            See http://app-framework-software.intel.com/documentation.php#afui/afui_jquery
+        -->
+        <script type="application/javascript" src="lib/jquery.min.js"></script>
+        <script type="application/javascript" src="app_framework/3.0/appframework.ui.min.js"></script>
+        <script type="application/javascript">
+            $.afui.autoLaunch = false; //By default, it is set to true and you're app will run right away.  We set it to false to show a splashscreen
+            /* This function runs when the content is loaded.*/
+            $.afui.useOSThemes=false;
+             $(document).ready(function(){
+                setTimeout(function(){
+                    $.afui.launch();
+                },1500);
+            });
+        </script>
+        <script type="application/javascript" src="lib/appframework.js"></script>
+        <script type="application/javascript" src="js/index_user_scripts.js"></script>
+        <script type="application/javascript" src="xdk/ad/af_subpage.js"></script>
+        <script type="application/javascript" src="app_framework/pageChangeRepeater.js"></script>
+    </head>
+
+    <body id="afui" class="v2">
+
+        <!-- IMPORTANT: Do not include a weinre script tag as part of your release builds! -->
+        <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work above -->
+        <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
+        <div class="upage view" id="mainpage" data-header="af-header-10" data-footer="none">
+            <header class="container-group outer-element uib_w_1" data-uib="app_framework/header" data-ver="3" id="af-header-10">
+                <h1>AUDIT SI</h1>
+                <div class="widget-container wrapping-col single-centered"></div>
+                <div class="widget-container content-area horiz-area wrapping-col header-left"></div>
+                <div class="widget-container content-area horiz-area wrapping-col header-right"></div>
+            </header>
+            <div class="pages">
+                <div class="upage-content ac0 content-area vertical-col left panel" id="page_69_14">
+                    <div class="tarea widget uib_w_2 d-margins tengah" data-uib="media/text" data-ver="0" name="uib_w_2">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>&nbsp;</p>
+
+                            <p>&nbsp;</p>
+
+                            <p>&nbsp;</p>
+
+                            <p><strong>INFORMATION SYSTEM AUDITOR</strong>
+                            </p>
+
+                            <p><strong>DOCUMENTATION LIST</strong>
+                            </p>
+
+                            <p><strong>GROUP 6</strong>
+                            </p>
+
+                            <p>&nbsp;</p>
+
+                            <p>&nbsp;</p>
+
+                            <p>&nbsp;</p>
+                        </div>
+                    </div>
+                    <a class="button widget uib_w_3 d-margins icon paper" data-uib="app_framework/button" data-ver="2" id="new_information" href="#information .panel" data-transition="fade" data-page-type="document_page">NEW</a><a class="button widget uib_w_5 d-margins icon user"
+                    data-uib="app_framework/button" data-ver="2" id="next_about" data-page-type="document_page" href="#about .panel" data-transition="fade">ABOUT</a>
+                </div>
+            </div>
+        </div>
+        <div class="upage view" id="verified" data-header="af-header-8" data-footer="none">
+            <header class="container-group outer-element uib_w_84" data-uib="app_framework/header" data-ver="3" id="af-header-8">
+                <h1>Documentation</h1>
+                <div class="widget-container wrapping-col single-centered"></div>
+                <div class="widget-container content-area horiz-area wrapping-col header-left"></div>
+                <div class="widget-container content-area horiz-area wrapping-col header-right"></div>
+            </header>
+            <div class="pages">
+                <div class="upage-content vertical-col left panel ac0" id="uib_page_1"></div>
+            </div>
+            <div class="upage-outer">
+                <div class="upage-content ac0 content-area vertical-col left">
+                    <div class="widget uib_w_85 d-margins" data-uib="app_framework/input_group" data-ver="2">
+                        <div class="formGroupHead">Date Verified by</div>
+                        <div class="input-group">
+                            <div class="table-thing with-label widget uib_w_86" data-uib="app_framework/input" data-ver="2">
+                                <label class="narrow-control label-top-left">Last Update :</label>
+                                <input class="wide-control" type="date">
+                            </div>
+                            <div class="table-thing with-label widget uib_w_87" data-uib="app_framework/input" data-ver="2">
+                                <label class="narrow-control label-top-left">Verification :</label>
+                                <input class="wide-control" type="date">
+                            </div>
+                            <div class="table-thing with-label widget uib_w_88" data-uib="app_framework/input" data-ver="2">
+                                <label class="narrow-control label-top-left">Sent to Head Office :</label>
+                                <input class="wide-control" type="date">
+                            </div>
+                            <div class="table-thing with-label widget uib_w_89 d-margins" data-uib="app_framework/input" data-ver="2">
+                                <label class="narrow-control label-top-left">Sent to Branch :</label>
+                                <input class="wide-control" type="date">
+                            </div>
+                            <div class="table-thing with-label widget uib_w_90 d-margins" data-uib="app_framework/input" data-ver="2">
+                                <label class="narrow-control label-top-left">Sent to Off-Site :</label>
+                                <input class="wide-control" type="date">
+                            </div>
+                        </div>
+                    </div><a class="button widget uib_w_91 d-margins" data-uib="app_framework/button" data-ver="2" id="generate_pdf">GENERATE</a><a class="button widget uib_w_92 d-margins" data-uib="app_framework/button" data-ver="2" id="back_verified_guidelines"
+                    href="#guidelines .panel" data-transition="fade" data-page-type="document_page">BACK</a>
+                </div>
+            </div>
+        </div>
+        <div class="upage view" id="guidelines" data-header="af-header-7" data-footer="none">
+            <header class="container-group outer-element uib_w_73" data-uib="app_framework/header" data-ver="3" id="af-header-7">
+                <h1>Documentation</h1>
+                <div class="widget-container wrapping-col single-centered"></div>
+                <div class="widget-container content-area horiz-area wrapping-col header-left"></div>
+                <div class="widget-container content-area horiz-area wrapping-col header-right"></div>
+            </header>
+            <div class="pages">
+                <div class="upage-content vertical-col left panel ac0" id="uib_page_1"></div>
+            </div>
+            <div class="upage-outer">
+                <div class="upage-content ac0 content-area vertical-col left">
+                    <div class="widget uib_w_74 d-margins" data-uib="app_framework/input_group" data-ver="2">
+                        <div class="formGroupHead">Name of Documents Guidelines</div>
+                        <div class="input-group">
+                            <div class="table-thing with-label widget uib_w_75" data-uib="app_framework/input" data-ver="2">
+                                <label class="narrow-control label-top-left">Date of Receipt :</label>
+                                <input class="wide-control" type="date">
+                            </div>
+                            <div class="table-thing with-label widget uib_w_76" data-uib="app_framework/input" data-ver="2">
+                                <label class="narrow-control label-top-left">Author :</label>
+                                <input class="wide-control" placeholder="Insert Author" type="text">
+                            </div>
+                            <div class="table-thing with-label widget uib_w_77" data-uib="app_framework/input" data-ver="2">
+                                <label class="narrow-control label-top-left">Custodian :</label>
+                                <input class="wide-control" placeholder="Insert Custodian" type="text">
+                            </div>
+                            <div class="table-thing with-label widget uib_w_82 d-margins" data-uib="app_framework/input" data-ver="2">
+                                <label class="narrow-control label-top-left">On-Site Location :</label>
+                                <input class="wide-control" placeholder="Insert On-Site Location" type="text">
+                            </div>
+                            <div class="table-thing with-label widget uib_w_83 d-margins" data-uib="app_framework/input" data-ver="2">
+                                <label class="narrow-control label-top-left">Off-Site Location :</label>
+                                <input class="wide-control" placeholder="Insert Off-Site Location" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-grouped flex widget uib_w_78 d-margins" data-uib="app_framework/button_group" data-ver="2"><a class="button widget uib_w_79" data-uib="app_framework/button" data-ver="2" id="back_guidelines_procedures" href="#procedures .panel" data-transition="fade" data-page-type="document_page">BACK</a><a class="button widget uib_w_80 icon paper"
+                        data-uib="app_framework/button" data-ver="2" id="add_guidelines">ADD</a><a class="button widget uib_w_81" data-uib="app_framework/button" data-ver="2" id="next_guidelines_verified" href="#verified .panel" data-transition="fade"
+                        data-page-type="document_page">NEXT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="upage view" id="procedures" data-header="af-header-6" data-footer="none">
+            <header class="container-group outer-element uib_w_62" data-uib="app_framework/header" data-ver="3" id="af-header-6">
+                <h1>Documentation</h1>
+                <div class="widget-container wrapping-col single-centered"></div>
+                <div class="widget-container content-area horiz-area wrapping-col header-left"></div>
+                <div class="widget-container content-area horiz-area wrapping-col header-right"></div>
+            </header>
+            <div class="pages">
+                <div class="upage-content vertical-col left panel ac0" id="uib_page_1"></div>
+            </div>
+            <div class="upage-outer">
+                <div class="upage-content ac0 content-area vertical-col left">
+                    <div class="widget uib_w_63 d-margins" data-uib="app_framework/input_group" data-ver="2">
+                        <div class="formGroupHead">Name of Document Procedures</div>
+                        <div class="input-group">
+                            <div class="table-thing with-label widget uib_w_64" data-uib="app_framework/input" data-ver="2">
+                                <label class="narrow-control label-top-left">Date of Receipts :</label>
+                                <input class="wide-control" type="date">
+                            </div>
+                            <div class="table-thing with-label widget uib_w_65" data-uib="app_framework/input" data-ver="2">
+                                <label class="narrow-control label-top-left">Author :</label>
+                                <input class="wide-control" placeholder="Insert Author" type="text">
+                            </div>
+                            <div class="table-thing with-label widget uib_w_66" data-uib="app_framework/input" data-ver="2">
+                                <label class="narrow-control label-top-left">Custodian :</label>
+                                <input class="wide-control" placeholder="Insert Custodian" type="text">
+                            </div>
+                            <div class="table-thing with-label widget uib_w_71 d-margins" data-uib="app_framework/input" data-ver="2">
+                                <label class="narrow-control label-top-left">On-Site Location :</label>
+                                <input class="wide-control" placeholder="Insert On-Site Location" type="text">
+                            </div>
+                            <div class="table-thing with-label widget uib_w_72 d-margins" data-uib="app_framework/input" data-ver="2">
+                                <label class="narrow-control label-top-left">Off-Site Location :</label>
+                                <input class="wide-control" placeholder="Insert Off-Site Location" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-grouped flex widget uib_w_67 d-margins" data-uib="app_framework/button_group" data-ver="2"><a class="button widget uib_w_68" data-uib="app_framework/button" data-ver="2" id="back_procedures_documents" href="#documents .panel" data-transition="fade" data-page-type="document_page">BACK</a><a class="button widget uib_w_69 icon paper"
+                        data-uib="app_framework/button" data-ver="2" id="add_procedures">ADD</a><a class="button widget uib_w_70" data-uib="app_framework/button" data-ver="2" id="next_procedures_guidelines" href="#guidelines .panel" data-transition="fade"
+                        data-page-type="document_page">NEXT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="upage view" id="documents" data-header="af-header-5" data-footer="none">
+            <header class="container-group outer-element uib_w_51" data-uib="app_framework/header" data-ver="3" id="af-header-5">
+                <h1>Documentation</h1>
+                <div class="widget-container wrapping-col single-centered"></div>
+                <div class="widget-container content-area horiz-area wrapping-col header-left"></div>
+                <div class="widget-container content-area horiz-area wrapping-col header-right"></div>
+            </header>
+            <div class="pages">
+                <div class="upage-content vertical-col left panel ac0" id="uib_page_1"></div>
+            </div>
+            <div class="upage-outer">
+                <div class="upage-content ac0 content-area vertical-col left">
+                    <div class="widget uib_w_52 d-margins" data-uib="app_framework/input_group" data-ver="2">
+                        <div class="formGroupHead">Name of Document Documents</div>
+                        <div class="input-group">
+                            <div class="table-thing with-label widget uib_w_53" data-uib="app_framework/input" data-ver="2">
+                                <label class="narrow-control label-top-left">Date of Receipt :</label>
+                                <input class="wide-control" type="date">
+                            </div>
+                            <div class="table-thing with-label widget uib_w_54" data-uib="app_framework/input" data-ver="2">
+                                <label class="narrow-control label-top-left">Author :</label>
+                                <input class="wide-control" placeholder="Insert Author" type="text">
+                            </div>
+                            <div class="table-thing with-label widget uib_w_55" data-uib="app_framework/input" data-ver="2">
+                                <label class="narrow-control label-top-left">Custodian :</label>
+                                <input class="wide-control" placeholder="Insert Custodian" type="text">
+                            </div>
+                            <div class="table-thing with-label widget uib_w_56 d-margins" data-uib="app_framework/input" data-ver="2">
+                                <label class="narrow-control label-top-left">On-Site Location :</label>
+                                <input class="wide-control" placeholder="Insert On-Site Location" type="text">
+                            </div>
+                            <div class="table-thing with-label widget uib_w_57 d-margins" data-uib="app_framework/input" data-ver="2">
+                                <label class="narrow-control label-top-left">Off-Site Location :</label>
+                                <input class="wide-control" placeholder="Insert Off-Site Location" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-grouped flex widget uib_w_58 d-margins" data-uib="app_framework/button_group" data-ver="2"><a class="button widget uib_w_59" data-uib="app_framework/button" data-ver="2" id="back_documents_agreements" href="#agreements .panel" data-transition="fade" data-page-type="document_page">BACK</a><a class="button widget uib_w_60 icon paper"
+                        data-uib="app_framework/button" data-ver="2" id="add_documents">ADD</a><a class="button widget uib_w_61" data-uib="app_framework/button" data-ver="2" id="next_documents_procedures" data-page-type="document_page" href="#procedures .panel"
+                        data-transition="fade">NEXT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="upage view" id="agreements" data-header="af-header-4" data-footer="none">
+            <header class="container-group outer-element uib_w_40" data-uib="app_framework/header" data-ver="3" id="af-header-4">
+                <h1>Documentation</h1>
+                <div class="widget-container wrapping-col single-centered"></div>
+                <div class="widget-container content-area horiz-area wrapping-col header-left"></div>
+                <div class="widget-container content-area horiz-area wrapping-col header-right"></div>
+            </header>
+            <div class="pages">
+                <div class="upage-content vertical-col left panel ac0" id="uib_page_1"></div>
+            </div>
+            <div class="upage-outer">
+                <div class="upage-content ac0 content-area vertical-col left">
+                    <div class="widget uib_w_41 d-margins" data-uib="app_framework/input_group" data-ver="2">
+                        <div class="formGroupHead">Name of Document Agreements</div>
+                        <div class="input-group">
+                            <div class="table-thing with-label widget uib_w_42" data-uib="app_framework/input" data-ver="2">
+                                <label class="narrow-control label-top-left">Date of Receipt :</label>
+                                <input class="wide-control" type="date">
+                            </div>
+                            <div class="table-thing with-label widget uib_w_43" data-uib="app_framework/input" data-ver="2">
+                                <label class="narrow-control label-top-left">Author :</label>
+                                <input class="wide-control" placeholder="Insert Author" type="text">
+                            </div>
+                            <div class="table-thing with-label widget uib_w_44" data-uib="app_framework/input" data-ver="2">
+                                <label class="narrow-control label-top-left">Custodian :</label>
+                                <input class="wide-control" placeholder="Insert Custodian" type="text">
+                            </div>
+                            <div class="table-thing with-label widget uib_w_45 d-margins" data-uib="app_framework/input" data-ver="2">
+                                <label class="narrow-control label-top-left">On-Site Location :</label>
+                                <input class="wide-control" placeholder="Insert On-Site Location" type="text">
+                            </div>
+                            <div class="table-thing with-label widget uib_w_46 d-margins" data-uib="app_framework/input" data-ver="2">
+                                <label class="narrow-control label-top-left">Off-Site Location :</label>
+                                <input class="wide-control" placeholder="Insert Off-Site Location" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-grouped flex widget uib_w_47 d-margins" data-uib="app_framework/button_group" data-ver="2"><a class="button widget uib_w_48" data-uib="app_framework/button" data-ver="2" id="back_agreements_plans" href="#plans .panel" data-transition="fade" data-page-type="document_page">BACK</a><a class="button widget uib_w_49 icon paper"
+                        data-uib="app_framework/button" data-ver="2" id="add_agreements">ADD</a><a class="button widget uib_w_50" data-uib="app_framework/button" data-ver="2" id="next_agreements_documents" href="#documents .panel" data-transition="fade"
+                        data-page-type="document_page">NEXT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="upage view" id="plans" data-header="af-header-3" data-footer="none">
+            <header class="container-group outer-element uib_w_29" data-uib="app_framework/header" data-ver="3" id="af-header-3">
+                <h1>Documentation</h1>
+                <div class="widget-container wrapping-col single-centered"></div>
+                <div class="widget-container content-area horiz-area wrapping-col header-left"></div>
+                <div class="widget-container content-area horiz-area wrapping-col header-right"></div>
+            </header>
+            <div class="pages">
+                <div class="upage-content vertical-col left panel ac0" id="uib_page_1"></div>
+            </div>
+            <div class="upage-outer">
+                <div class="upage-content ac0 content-area vertical-col left">
+                    <div class="widget uib_w_30 d-margins" data-uib="app_framework/input_group" data-ver="2">
+                        <div class="formGroupHead">Name of Document Plans</div>
+                        <div class="input-group">
+                            <div class="table-thing with-label widget uib_w_31" data-uib="app_framework/input" data-ver="2">
+                                <label class="narrow-control label-top-left">Date of Receipt :</label>
+                                <input class="wide-control" type="date">
+                            </div>
+                            <div class="table-thing with-label widget uib_w_32" data-uib="app_framework/input" data-ver="2">
+                                <label class="narrow-control label-top-left">Author</label>
+                                <input class="wide-control" placeholder="Insert Author" type="text">
+                            </div>
+                            <div class="table-thing with-label widget uib_w_33" data-uib="app_framework/input" data-ver="2">
+                                <label class="narrow-control label-top-left">Custodian :</label>
+                                <input class="wide-control" placeholder="Insert Custodian" type="text">
+                            </div>
+                            <div class="table-thing with-label widget uib_w_34 d-margins" data-uib="app_framework/input" data-ver="2">
+                                <label class="narrow-control label-top-left">On-Site Location :</label>
+                                <input class="wide-control" placeholder="Insert On-Site Location" type="text">
+                            </div>
+                            <div class="table-thing with-label widget uib_w_35 d-margins" data-uib="app_framework/input" data-ver="2">
+                                <label class="narrow-control label-top-left">Off-Site Location :</label>
+                                <input class="wide-control" placeholder="Insert Off-Site Location" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-grouped flex widget uib_w_36 d-margins" data-uib="app_framework/button_group" data-ver="2"><a class="button widget uib_w_37" data-uib="app_framework/button" data-ver="2" id="back_plans_manuals" href="#manuals .panel" data-transition="fade" data-page-type="document_page">BACK</a><a class="button widget uib_w_38 icon paper"
+                        data-uib="app_framework/button" data-ver="2" id="add_plans">ADD</a><a class="button widget uib_w_39" data-uib="app_framework/button" data-ver="2" id="next_plans_agreements" href="#agreements .panel" data-transition="fade" data-page-type="document_page">NEXT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="upage view" id="manuals" data-header="af-header-2" data-footer="none">
+            <header class="container-group outer-element uib_w_18" data-uib="app_framework/header" data-ver="3" id="af-header-2">
+                <h1>Documentation</h1>
+                <div class="widget-container wrapping-col single-centered"></div>
+                <div class="widget-container content-area horiz-area wrapping-col header-left"></div>
+                <div class="widget-container content-area horiz-area wrapping-col header-right"></div>
+            </header>
+            <div class="pages">
+                <div class="upage-content vertical-col left panel ac0" id="uib_page_1"></div>
+            </div>
+            <div class="upage-outer">
+                <div class="upage-content ac0 content-area vertical-col left">
+                    <div class="widget uib_w_19 d-margins" data-uib="app_framework/input_group" data-ver="2">
+                        <div class="formGroupHead">Name of Document Manuals</div>
+                        <div class="input-group">
+                            <div class="table-thing with-label widget uib_w_20" data-uib="app_framework/input" data-ver="2">
+                                <label class="narrow-control label-top-left">Date of Receipt :</label>
+                                <input class="wide-control" type="date">
+                            </div>
+                            <div class="table-thing with-label widget uib_w_21" data-uib="app_framework/input" data-ver="2">
+                                <label class="narrow-control label-top-left">Author :</label>
+                                <input class="wide-control" placeholder="Insert Author" type="text">
+                            </div>
+                            <div class="table-thing with-label widget uib_w_22" data-uib="app_framework/input" data-ver="2">
+                                <label class="narrow-control label-top-left">Custodian :</label>
+                                <input class="wide-control" placeholder="Insert Custodian" type="text">
+                            </div>
+                            <div class="table-thing with-label widget uib_w_23 d-margins" data-uib="app_framework/input" data-ver="2">
+                                <label class="narrow-control label-top-left">On-Site Location :</label>
+                                <input class="wide-control" placeholder="Insert On-Site Location" type="text">
+                            </div>
+                            <div class="table-thing with-label widget uib_w_24 d-margins" data-uib="app_framework/input" data-ver="2">
+                                <label class="narrow-control label-top-left">Off-Site Location :</label>
+                                <input class="wide-control" placeholder="Insert Off-Site Location" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-grouped flex widget uib_w_25 d-margins" data-uib="app_framework/button_group" data-ver="2"><a class="button widget uib_w_26" data-uib="app_framework/button" data-ver="2" id="back_manuals_information" href="#information .panel" data-transition="fade" data-page-type="document_page">BACK</a><a class="button widget uib_w_27 icon paper"
+                        data-uib="app_framework/button" data-ver="2" id="add_manuals">ADD</a><a class="button widget uib_w_28" data-uib="app_framework/button" data-ver="2" id="next_manuals_plans" href="#plans .panel" data-transition="fade" data-page-type="document_page">NEXT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="upage view" id="information" data-header="af-header-1" data-footer="none">
+            <header class="container-group outer-element uib_w_9" data-uib="app_framework/header" data-ver="3" id="af-header-1">
+                <h1>Documentation</h1>
+                <div class="widget-container wrapping-col single-centered"></div>
+                <div class="widget-container content-area horiz-area wrapping-col header-left"></div>
+                <div class="widget-container content-area horiz-area wrapping-col header-right"></div>
+            </header>
+            <div class="pages">
+                <div class="upage-content vertical-col left panel ac0" id="uib_page_1"></div>
+            </div>
+            <div class="upage-outer">
+                <div class="upage-content ac0 content-area vertical-col left">
+                    <div class="widget uib_w_10 d-margins" data-uib="app_framework/input_group" data-ver="2">
+                        <div class="formGroupHead">INFORMATION</div>
+                        <div class="input-group">
+                            <div class="table-thing with-label widget uib_w_11" data-uib="app_framework/input" data-ver="2">
+                                <label class="narrow-control label-top-left">Name of Office :</label>
+                                <input class="wide-control" placeholder="Insert Name of Office" type="text">
+                            </div>
+                            <div class="table-thing with-label widget uib_w_12" data-uib="app_framework/input" data-ver="2">
+                                <label class="narrow-control label-top-left">Address :</label>
+                                <input class="wide-control" placeholder="Insert Address" type="text">
+                            </div>
+                            <div class="table-thing with-label widget uib_w_13" data-uib="app_framework/input" data-ver="2">
+                                <label class="narrow-control label-top-left">Phone No./E-Mail ID :</label>
+                                <input class="wide-control" placeholder="Insert Phone No./E-Mail ID" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-grouped flex widget uib_w_14 d-margins" data-uib="app_framework/button_group" data-ver="2"><a class="button widget uib_w_15" data-uib="app_framework/button" data-ver="2" id="back_information_main" href="#mainpage .panel" data-transition="fade" data-page-type="document_page">BACK</a><a class="button widget uib_w_16 icon paper"
+                        data-uib="app_framework/button" data-ver="2" id="add_information">ADD</a><a class="button widget uib_w_17" data-uib="app_framework/button" data-ver="2" id="next_information_manuals" href="#manuals .panel" data-transition="fade"
+                        data-page-type="document_page">NEXT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="upage view" id="about" data-header="af-header-0" data-footer="none">
+            <header class="container-group outer-element uib_w_6" data-uib="app_framework/header" data-ver="3" id="af-header-0">
+                <h1>ABOUT</h1>
+                <div class="widget-container wrapping-col single-centered"></div>
+                <div class="widget-container content-area horiz-area wrapping-col header-left"></div>
+                <div class="widget-container content-area horiz-area wrapping-col header-right"></div>
+            </header>
+            <div class="pages">
+                <div class="upage-content vertical-col left panel ac0" id="uib_page_1"></div>
+            </div>
+            <div class="upage-outer">
+                <div class="upage-content ac0 content-area vertical-col left">
+                    <div class="tarea widget uib_w_7 d-margins tengah" data-uib="media/text" data-ver="0" name="uib_w_7">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>
+                                <br>
+                                <br>
+                                <strong>INFORMATION SYSTEM AUDITOR<br>
+KELOMPOK 6</strong>
+                                <br>&nbsp;
+                            </p>
+
+                            <p><strong>ANGGOTA KELOMPOK :<br>
+<br>
+MUHAMMAD IHSAN AJI WIEDJAYANTO<br>
+(24010312140050)</strong>
+                            </p>
+
+                            <p><strong>FAQIH ARIFIAN AJIPRADANA<br>
+(24010312130054)</strong>
+                            </p>
+
+                            <p><strong>RIDWAN SOBIRIN<br>
+(240103121)</strong>
+                            </p>
+
+                            <p><strong>I WAYAN WIDNYANA W. P.<br>
+(240103121)</strong>
+                            </p>
+
+                            <p><strong>KARUNIA PRITA<br>
+(240103121)</strong>
+                            </p>
+                        </div>
+                    </div><a class="button widget uib_w_8 d-margins" data-uib="app_framework/button" data-ver="2" id="back_about_main" href="#mainpage .panel" data-transition="fade" data-page-type="document_page">BACK</a>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>
