@@ -410,3 +410,19 @@ body#afui .splt {
 #afui .button-grouped > .d-margins {
   margin: 0;
 }
+@media all {
+  #afui .latar .panel {
+    background-color: #d9edf7;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}
+@media all {
+  #afui .latar_verified .panel {
+    background-color: #d9edf7;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}

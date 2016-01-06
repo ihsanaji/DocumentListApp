@@ -44,82 +44,50 @@ body {
 }
 
 #mainpage {
-    height: auto;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    verticalScroll:true;
+    horizontalScroll:false;
+    autoEnable:true;
 }
 
 #information {
-    height: auto;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    verticalScroll:true;
+    horizontalScroll:false;
+    autoEnable:true;
 }
 
 #manuals {
-    height: auto;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    verticalScroll:true;
+    horizontalScroll:false;
+    autoEnable:true;
 }
 
 #plans {
-    height: auto;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    verticalScroll:true;
+    horizontalScroll:false;
+    autoEnable:true;
 }
 
 #agreements {
-    height: auto;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    verticalScroll:true;
+    horizontalScroll:false;
+    autoEnable:true;
 }
 
 #documents {
-    height: auto;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    verticalScroll:true;
+    horizontalScroll:false;
+    autoEnable:true;
 }
 
 #procedures {
-    height: auto;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    verticalScroll:true;
+    horizontalScroll:false;
+    autoEnable:true;
 }
 
 #guidelines{
-    height: auto;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    verticalScroll:true;
+    horizontalScroll:false;
+    autoEnable:true;
 }
 
