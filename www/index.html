@@ -95,8 +95,8 @@
                     intel.xdk.device.setRotateOrientation('potrait');
                 }
                 //intel.xdk.device.hideSplashScreen();   
-            }        
-    </script>
+            }
+        </script>
         <script type="application/javascript" src="lib/appframework.js"></script>
         <script type="application/javascript" src="js/index_user_scripts.js"></script>
         <script type="application/javascript" src="xdk/ad/af_subpage.js"></script>
@@ -108,7 +108,7 @@
         <!-- IMPORTANT: Do not include a weinre script tag as part of your release builds! -->
         <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work above -->
         <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
-        <div class="upage view" id="mainpage" data-header="af-header-10" data-footer="none">
+        <div class="upage view text_center latar" id="mainpage" data-header="af-header-10" data-footer="none">
             <header class="container-group outer-element uib_w_1" data-uib="app_framework/header" data-ver="3" id="af-header-10">
                 <h1>AUDIT SI</h1>
                 <div class="widget-container wrapping-col single-centered"></div>
@@ -117,7 +117,7 @@
             </header>
             <div class="pages">
                 <div class="upage-content ac0 content-area vertical-col left panel" id="page_69_14">
-                    <div class="tarea widget uib_w_2 d-margins tengah" data-uib="media/text" data-ver="0" name="uib_w_2">
+                    <div class="tarea widget uib_w_100 d-margins tengah" data-uib="media/text" data-ver="0" name="uib_w_100">
                         <div class="widget-container left-receptacle"></div>
                         <div class="widget-container right-receptacle"></div>
                         <div class="text-container">
@@ -131,6 +131,7 @@
                             </p>
 
                             <p><strong>DOCUMENTATION LIST</strong>
+                                <br>&nbsp;
                             </p>
 
                             <p><strong>GROUP 6</strong>
@@ -143,8 +144,9 @@
                             <p>&nbsp;</p>
                         </div>
                     </div>
-                    <a class="button widget uib_w_3 d-margins icon paper" data-uib="app_framework/button" data-ver="2" id="new_information" href="#information .panel" data-transition="fade" data-page-type="document_page">NEW</a><a class="button widget uib_w_5 d-margins icon user"
-                    data-uib="app_framework/button" data-ver="2" id="next_about" data-page-type="document_page" href="#about .panel" data-transition="fade">ABOUT</a>
+
+                    <a class="button tombol_new widget uib_w_3 d-margins text_center icon paper" data-uib="app_framework/button" data-ver="2" id="new_information" href="#information .panel" data-transition="fade" data-page-type="document_page">NEW</a>
+                    <a class="button tombol_about widget uib_w_5 icon user margin_about" data-uib="app_framework/button" data-ver="2" id="next_about" data-page-type="document_page" href="#about .panel" data-transition="fade">ABOUT</a>
                 </div>
             </div>
         </div>
@@ -185,8 +187,8 @@
                                 <input class="wide-control" type="date">
                             </div>
                         </div>
-                    </div><a class="button widget uib_w_91 d-margins" data-uib="app_framework/button" data-ver="2" id="generate_pdf">GENERATE</a><a class="button widget uib_w_92 d-margins" data-uib="app_framework/button" data-ver="2" id="back_verified_guidelines"
-                    href="#guidelines .panel" data-transition="fade" data-page-type="document_page">BACK</a>
+                    </div><a class="button tombol_generate widget uib_w_91 d-margins" data-uib="app_framework/button" data-ver="2" id="generate_pdf">GENERATE</a><a class="button tombol widget uib_w_92 d-margins" data-uib="app_framework/button" data-ver="2"
+                    id="back_verified_guidelines" href="#guidelines .panel" data-transition="fade" data-page-type="document_page">BACK</a>
                 </div>
             </div>
         </div>
@@ -231,8 +233,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="button-grouped flex widget uib_w_78 d-margins" data-uib="app_framework/button_group" data-ver="2"><a class="button widget uib_w_79" data-uib="app_framework/button" data-ver="2" id="back_guidelines_procedures" href="#procedures .panel" data-transition="fade" data-page-type="document_page">BACK</a><a class="button widget uib_w_80 icon paper"
-                        data-uib="app_framework/button" data-ver="2" id="add_guidelines">ADD</a><a class="button widget uib_w_81" data-uib="app_framework/button" data-ver="2" id="next_guidelines_verified" href="#verified .panel" data-transition="fade"
+                    <div class="button-grouped flex widget uib_w_78 d-margins" data-uib="app_framework/button_group" data-ver="2"><a class="button tombol widget uib_w_79" data-uib="app_framework/button" data-ver="2" id="back_guidelines_procedures" href="#procedures .panel" data-transition="fade" data-page-type="document_page">BACK</a><a class="button tombol_add widget uib_w_80 icon paper"
+                        data-uib="app_framework/button" data-ver="2" id="add_guidelines">ADD</a><a class="button tombol widget uib_w_81" data-uib="app_framework/button" data-ver="2" id="next_guidelines_verified" href="#verified .panel" data-transition="fade"
                         data-page-type="document_page">NEXT</a>
                     </div>
                 </div>
@@ -279,8 +281,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="button-grouped flex widget uib_w_67 d-margins" data-uib="app_framework/button_group" data-ver="2"><a class="button widget uib_w_68" data-uib="app_framework/button" data-ver="2" id="back_procedures_documents" href="#documents .panel" data-transition="fade" data-page-type="document_page">BACK</a><a class="button widget uib_w_69 icon paper"
-                        data-uib="app_framework/button" data-ver="2" id="add_procedures">ADD</a><a class="button widget uib_w_70" data-uib="app_framework/button" data-ver="2" id="next_procedures_guidelines" href="#guidelines .panel" data-transition="fade"
+                    <div class="button-grouped flex widget uib_w_67 d-margins" data-uib="app_framework/button_group" data-ver="2"><a class="button tombol widget uib_w_68" data-uib="app_framework/button" data-ver="2" id="back_procedures_documents" href="#documents .panel" data-transition="fade" data-page-type="document_page">BACK</a><a class="button tombol_add widget uib_w_69 icon paper"
+                        data-uib="app_framework/button" data-ver="2" id="add_procedures">ADD</a><a class="button tombol widget uib_w_70" data-uib="app_framework/button" data-ver="2" id="next_procedures_guidelines" href="#guidelines .panel" data-transition="fade"
                         data-page-type="document_page">NEXT</a>
                     </div>
                 </div>
@@ -327,8 +329,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="button-grouped flex widget uib_w_58 d-margins" data-uib="app_framework/button_group" data-ver="2"><a class="button widget uib_w_59" data-uib="app_framework/button" data-ver="2" id="back_documents_agreements" href="#agreements .panel" data-transition="fade" data-page-type="document_page">BACK</a><a class="button widget uib_w_60 icon paper"
-                        data-uib="app_framework/button" data-ver="2" id="add_documents">ADD</a><a class="button widget uib_w_61" data-uib="app_framework/button" data-ver="2" id="next_documents_procedures" data-page-type="document_page" href="#procedures .panel"
+                    <div class="button-grouped flex widget uib_w_58 d-margins" data-uib="app_framework/button_group" data-ver="2"><a class="button tombol widget uib_w_59" data-uib="app_framework/button" data-ver="2" id="back_documents_agreements" href="#agreements .panel" data-transition="fade" data-page-type="document_page">BACK</a><a class="button tombol_add widget uib_w_60 icon paper"
+                        data-uib="app_framework/button" data-ver="2" id="add_documents">ADD</a><a class="button tombol widget uib_w_61" data-uib="app_framework/button" data-ver="2" id="next_documents_procedures" data-page-type="document_page" href="#procedures .panel"
                         data-transition="fade">NEXT</a>
                     </div>
                 </div>
@@ -375,8 +377,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="button-grouped flex widget uib_w_47 d-margins" data-uib="app_framework/button_group" data-ver="2"><a class="button widget uib_w_48" data-uib="app_framework/button" data-ver="2" id="back_agreements_plans" href="#plans .panel" data-transition="fade" data-page-type="document_page">BACK</a><a class="button widget uib_w_49 icon paper"
-                        data-uib="app_framework/button" data-ver="2" id="add_agreements">ADD</a><a class="button widget uib_w_50" data-uib="app_framework/button" data-ver="2" id="next_agreements_documents" href="#documents .panel" data-transition="fade"
+                    <div class="button-grouped flex widget uib_w_47 d-margins" data-uib="app_framework/button_group" data-ver="2"><a class="button tombol widget uib_w_48" data-uib="app_framework/button" data-ver="2" id="back_agreements_plans" href="#plans .panel" data-transition="fade" data-page-type="document_page">BACK</a><a class="button tombol_add widget uib_w_49 icon paper"
+                        data-uib="app_framework/button" data-ver="2" id="add_agreements">ADD</a><a class="button tombol widget uib_w_50" data-uib="app_framework/button" data-ver="2" id="next_agreements_documents" href="#documents .panel" data-transition="fade"
                         data-page-type="document_page">NEXT</a>
                     </div>
                 </div>
@@ -423,8 +425,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="button-grouped flex widget uib_w_36 d-margins" data-uib="app_framework/button_group" data-ver="2"><a class="button widget uib_w_37" data-uib="app_framework/button" data-ver="2" id="back_plans_manuals" href="#manuals .panel" data-transition="fade" data-page-type="document_page">BACK</a><a class="button widget uib_w_38 icon paper"
-                        data-uib="app_framework/button" data-ver="2" id="add_plans">ADD</a><a class="button widget uib_w_39" data-uib="app_framework/button" data-ver="2" id="next_plans_agreements" href="#agreements .panel" data-transition="fade" data-page-type="document_page">NEXT</a>
+                    <div class="button-grouped flex widget uib_w_36 d-margins" data-uib="app_framework/button_group" data-ver="2"><a class="button tombol widget uib_w_37" data-uib="app_framework/button" data-ver="2" id="back_plans_manuals" href="#manuals .panel" data-transition="fade" data-page-type="document_page">BACK</a><a class="button tombol_add widget uib_w_38 icon paper"
+                        data-uib="app_framework/button" data-ver="2" id="add_plans">ADD</a><a class="button tombol widget uib_w_39" data-uib="app_framework/button" data-ver="2" id="next_plans_agreements" href="#agreements .panel" data-transition="fade"
+                        data-page-type="document_page">NEXT</a>
                     </div>
                 </div>
             </div>
@@ -470,8 +473,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="button-grouped flex widget uib_w_25 d-margins" data-uib="app_framework/button_group" data-ver="2"><a class="button widget uib_w_26" data-uib="app_framework/button" data-ver="2" id="back_manuals_information" href="#information .panel" data-transition="fade" data-page-type="document_page">BACK</a><a class="button widget uib_w_27 icon paper"
-                        data-uib="app_framework/button" data-ver="2" id="add_manuals">ADD</a><a class="button widget uib_w_28" data-uib="app_framework/button" data-ver="2" id="next_manuals_plans" href="#plans .panel" data-transition="fade" data-page-type="document_page">NEXT</a>
+                    <div class="button-grouped flex widget uib_w_25 d-margins" data-uib="app_framework/button_group" data-ver="2"><a class="button tombol widget uib_w_26" data-uib="app_framework/button" data-ver="2" id="back_manuals_information" href="#information .panel" data-transition="fade" data-page-type="document_page">BACK</a><a class="button tombol_add widget uib_w_27 icon paper"
+                        data-uib="app_framework/button" data-ver="2" id="add_manuals">ADD</a><a class="button tombol widget uib_w_28" data-uib="app_framework/button" data-ver="2" id="next_manuals_plans" href="#plans .panel" data-transition="fade" data-page-type="document_page">NEXT</a>
                     </div>
                 </div>
             </div>
@@ -506,8 +509,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="button-grouped flex widget uib_w_14 d-margins" data-uib="app_framework/button_group" data-ver="2"><a class="button previous widget uib_w_15" data-uib="app_framework/button" data-ver="2" id="back_information_main" href="#mainpage .panel" data-transition="fade" data-page-type="document_page">BACK</a><a class="button widget uib_w_16 icon paper"
-                        data-uib="app_framework/button" data-ver="2" id="add_information">ADD</a><a class="button widget uib_w_17" data-uib="app_framework/button" data-ver="2" id="next_information_manuals" href="#manuals .panel" data-transition="fade"
+                    <div class="button-grouped flex widget uib_w_14 d-margins" data-uib="app_framework/button_group" data-ver="2"><a class="button tombol widget uib_w_15" data-uib="app_framework/button" data-ver="2" id="back_information_main" href="#mainpage .panel" data-transition="fade" data-page-type="document_page">BACK</a><a class="button tombol_add widget uib_w_16 icon paper"
+                        data-uib="app_framework/button" data-ver="2" id="add_information">ADD</a><a class="button tombol widget uib_w_17" data-uib="app_framework/button" data-ver="2" id="next_information_manuals" href="#manuals .panel" data-transition="fade"
                         data-page-type="document_page">NEXT</a>
                     </div>
                 </div>
@@ -525,21 +528,29 @@
             </div>
             <div class="upage-outer">
                 <div class="upage-content ac0 content-area vertical-col left" id="page_52_20">
+                    <div class="tarea widget uib_w_99 d-margins text_center" data-uib="media/text" data-ver="0" name="uib_w_99">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>&nbsp;</p>
+
+                            <h2><strong>INFORMATION SYSTEM AUDITOR<br>
+<br>
+KELOMPOK 6</strong></h2>
+
+                            <p>&nbsp;</p>
+                        </div>
+                    </div>
                     <div class="tarea widget uib_w_7 d-margins tengah" data-uib="media/text" data-ver="0" name="uib_w_7">
                         <div class="widget-container left-receptacle"></div>
                         <div class="widget-container right-receptacle"></div>
                         <div class="text-container">
-                            <p>
-                                <br>
-                                <br>
-                                <strong>INFORMATION SYSTEM AUDITOR<br>
-KELOMPOK 6</strong>
-                                <br>&nbsp;
+                            <p>&nbsp;</p>
+
+                            <p><strong>ANGGOTA KELOMPOK :</strong>
                             </p>
 
-                            <p><strong>ANGGOTA KELOMPOK :<br>
-<br>
-MUHAMMAD IHSAN AJI WIEDJAYANTO<br>
+                            <p><strong>MUHAMMAD IHSAN AJI WIEDJAYANTO<br>
 (24010312140050)</strong>
                             </p>
 
@@ -559,7 +570,7 @@ MUHAMMAD IHSAN AJI WIEDJAYANTO<br>
 (240103121)</strong>
                             </p>
                         </div>
-                    </div><a class="button widget uib_w_8 d-margins" data-uib="app_framework/button" data-ver="2" id="back_about_main" href="#mainpage .panel" data-transition="fade" data-page-type="document_page">BACK</a>
+                    </div><a class="button tombol widget uib_w_8 d-margins" data-uib="app_framework/button" data-ver="2" id="back_about_main" href="#mainpage .panel" data-transition="fade" data-page-type="document_page">BACK</a>
                 </div>
             </div>
         </div>

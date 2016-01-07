@@ -371,6 +371,8 @@ body#afui .splt {
 }
 @media all {
   #afui .tengah p {
+    font-size: 17px;
+    color: #000000;
     text-align: center;
   }
 }
@@ -440,4 +442,22 @@ body#afui .splt {
     width: 60px !important;
     border-radius: 100% !important;
   }
+}
+@media all {
+  #afui .wrapping-col > .margin_about,
+  #afui .wrapping-col > .afScrollPanel > .margin_about {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  #afui .wrapping-col > .margin_about,
+  #afui .wrapping-col > .afScrollPanel > .margin_about {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  #afui .margin_about {
+    margin-bottom: 10px;
+  }
+}
+.text_center {
+  text-align: center;
 }
