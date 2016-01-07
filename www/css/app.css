@@ -111,6 +111,12 @@ body {
     background-color: #d9edf7;
 }
 
+#display{
+    overflow-y: auto !important;
+    max-height: 100% !important;
+    background-color: #d9edf7;
+}
+
 .tombol{
     color:#fff;
     text-shadow:0 -1px 0 skyblue;
@@ -144,4 +150,8 @@ body {
     text-shadow:0 -1px 0 skyblue;
     background:#F44336;
     border-radius: 15px/50px;
+}
+
+.ukuran_kecil{
+    border-width: medium;
 }
