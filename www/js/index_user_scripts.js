@@ -72,6 +72,78 @@
          saveGuidelines();
      });
      
+     $(document).on("click", "#add_manuals", function(){
+         var item = '<div class="input-group"><div class="table-thing with-label widget uib_w_93 position" data-uib="app_framework/input" data-ver="2"><label class="narrow-control label-top-left">Name :</label><input class="wide-control" placeholder="Insert Name" type="text"></div><div class="table-thing with-label widget uib_w_20 position" data-uib="app_framework/input" data-ver="2"><label class="narrow-control label-top-left">Date of Receipt :</label><input class="wide-control" type="date"></div><div class="table-thing with-label widget uib_w_21 position" data-uib="app_framework/input" data-ver="2"><label class="narrow-control label-top-left">Author :</label><input class="wide-control" placeholder="Insert Author" type="text"></div><div class="table-thing with-label widget uib_w_22 position" data-uib="app_framework/input" data-ver="2"><label class="narrow-control label-top-left">Custodian :</label><input class="wide-control" placeholder="Insert Custodian" type="text"></div><div class="table-thing with-label widget uib_w_23 position" data-uib="app_framework/input" data-ver="2"><label class="narrow-control label-top-left">On-Site Location :</label><input class="wide-control" placeholder="Insert On-Site Location" type="text"></div><div class="table-thing with-label widget uib_w_24 position" data-uib="app_framework/input" data-ver="2"><label class="narrow-control label-top-left">Off-Site Location :</label><input class="wide-control" placeholder="Insert Off-Site Location" type="text"></div></div>';
+         
+         var inputGroup = $("#manuals .input-group");
+//         $(inputGroup[inputGroup.length-1]).after(item);
+         $(inputGroup[inputGroup.length-1]).after($(inputGroup[inputGroup.length-1]).clone());
+         var inputs = $(inputGroup[inputGroup.length-1]).next().find("input");
+         $(inputs).each(function(index){
+             $(this).val("");
+         });
+     });
+     
+     $(document).on("click", "#add_plans", function(){
+         var item = '<div class="input-group"><div class="table-thing with-label widget uib_w_94 position" data-uib="app_framework/input" data-ver="2"><label class="narrow-control label-top-left">Name :</label><input class="wide-control" placeholder="Insert Name" type="text"></div><div class="table-thing with-label widget uib_w_31 position" data-uib="app_framework/input" data-ver="2"><label class="narrow-control label-top-left">Date of Receipt :</label><input class="wide-control" type="date"></div><div class="table-thing with-label widget uib_w_32 position" data-uib="app_framework/input" data-ver="2"><label class="narrow-control label-top-left">Author</label><input class="wide-control" placeholder="Insert Author" type="text"></div><div class="table-thing with-label widget uib_w_33 position" data-uib="app_framework/input" data-ver="2"><label class="narrow-control label-top-left">Custodian :</label><input class="wide-control" placeholder="Insert Custodian" type="text"></div><div class="table-thing with-label widget uib_w_34 position" data-uib="app_framework/input" data-ver="2"><label class="narrow-control label-top-left">On-Site Location :</label><input class="wide-control" placeholder="Insert On-Site Location" type="text"></div><div class="table-thing with-label widget uib_w_35 position" data-uib="app_framework/input" data-ver="2"><label class="narrow-control label-top-left">Off-Site Location :</label><input class="wide-control" placeholder="Insert Off-Site Location" type="text"></div></div>';
+         
+         var inputGroup = $("#plans .input-group");
+//         $(inputGroup[inputGroup.length-1]).after(item);
+         $(inputGroup[inputGroup.length-1]).after($(inputGroup[inputGroup.length-1]).clone());
+         var inputs = $(inputGroup[inputGroup.length-1]).next().find("input");
+         $(inputs).each(function(index){
+             $(this).val("");
+         });
+     });
+     
+     $(document).on("click", "#add_agreements", function(){
+         var item = '<div class="input-group"><div class="table-thing with-label widget uib_w_95 position" data-uib="app_framework/input" data-ver="2"><label class="narrow-control label-top-left">Name :</label><input class="wide-control" placeholder="Insert Name" type="text"></div><div class="table-thing with-label widget uib_w_42 position" data-uib="app_framework/input" data-ver="2"><label class="narrow-control label-top-left">Date of Receipt :</label><input class="wide-control" type="date"></div><div class="table-thing with-label widget uib_w_43 position" data-uib="app_framework/input" data-ver="2"><label class="narrow-control label-top-left">Author :</label><input class="wide-control" placeholder="Insert Author" type="text"></div><div class="table-thing with-label widget uib_w_44 position" data-uib="app_framework/input" data-ver="2"><label class="narrow-control label-top-left">Custodian :</label><input class="wide-control" placeholder="Insert Custodian" type="text"></div><div class="table-thing with-label widget uib_w_45 position" data-uib="app_framework/input" data-ver="2"><label class="narrow-control label-top-left">On-Site Location :</label><input class="wide-control" placeholder="Insert On-Site Location" type="text"></div><div class="table-thing with-label widget uib_w_46 position" data-uib="app_framework/input" data-ver="2"><label class="narrow-control label-top-left">Off-Site Location :</label><input class="wide-control" placeholder="Insert Off-Site Location" type="text"></div></div>';
+         
+         var inputGroup = $("#agreements .input-group");
+//         $(inputGroup[inputGroup.length-1]).after(item);
+         $(inputGroup[inputGroup.length-1]).after($(inputGroup[inputGroup.length-1]).clone());
+         var inputs = $(inputGroup[inputGroup.length-1]).next().find("input");
+         $(inputs).each(function(index){
+             $(this).val("");
+         });
+     });
+     
+     $(document).on("click", "#add_documents", function(){
+         var item = '<div class="input-group"><div class="table-thing with-label widget uib_w_96 position" data-uib="app_framework/input" data-ver="2"><label class="narrow-control label-top-left">Name :</label><input class="wide-control" placeholder="Insert Name" type="text"></div><div class="table-thing with-label widget uib_w_53 position" data-uib="app_framework/input" data-ver="2"><label class="narrow-control label-top-left">Date of Receipt :</label><input class="wide-control" type="date"></div><div class="table-thing with-label widget uib_w_54 position" data-uib="app_framework/input" data-ver="2"><label class="narrow-control label-top-left">Author :</label><input class="wide-control" placeholder="Insert Author" type="text"></div><div class="table-thing with-label widget uib_w_55 position" data-uib="app_framework/input" data-ver="2"><label class="narrow-control label-top-left">Custodian :</label><input class="wide-control" placeholder="Insert Custodian" type="text"></div><div class="table-thing with-label widget uib_w_56 position" data-uib="app_framework/input" data-ver="2"><label class="narrow-control label-top-left">On-Site Location :</label><input class="wide-control" placeholder="Insert On-Site Location" type="text"></div><div class="table-thing with-label widget uib_w_57 position" data-uib="app_framework/input" data-ver="2"><label class="narrow-control label-top-left">Off-Site Location :</label><input class="wide-control" placeholder="Insert Off-Site Location" type="text"></div></div>';
+         
+         var inputGroup = $("#documents .input-group");
+//         $(inputGroup[inputGroup.length-1]).after(item);
+         $(inputGroup[inputGroup.length-1]).after($(inputGroup[inputGroup.length-1]).clone());
+         var inputs = $(inputGroup[inputGroup.length-1]).next().find("input");
+         $(inputs).each(function(index){
+             $(this).val("");
+         });
+     });
+     
+     $(document).on("click", "#add_procedures", function(){
+         var item = '<div class="input-group"><div class="table-thing with-label widget uib_w_97 position" data-uib="app_framework/input" data-ver="2"><label class="narrow-control label-top-left">Name :</label><input class="wide-control" placeholder="Insert Name" type="text"></div><div class="table-thing with-label widget uib_w_64 position" data-uib="app_framework/input" data-ver="2"><label class="narrow-control label-top-left">Date of Receipts :</label><input class="wide-control" type="date"></div><div class="table-thing with-label widget uib_w_65 position" data-uib="app_framework/input" data-ver="2"><label class="narrow-control label-top-left">Author :</label><input class="wide-control" placeholder="Insert Author" type="text"></div><div class="table-thing with-label widget uib_w_66 position" data-uib="app_framework/input" data-ver="2"><label class="narrow-control label-top-left">Custodian :</label><input class="wide-control" placeholder="Insert Custodian" type="text"></div><div class="table-thing with-label widget uib_w_71 position" data-uib="app_framework/input" data-ver="2"><label class="narrow-control label-top-left">On-Site Location :</label><input class="wide-control" placeholder="Insert On-Site Location" type="text"></div><div class="table-thing with-label widget uib_w_72 position" data-uib="app_framework/input" data-ver="2"><label class="narrow-control label-top-left">Off-Site Location :</label><input class="wide-control" placeholder="Insert Off-Site Location" type="text"></div></div>';
+         
+         var inputGroup = $("#procedures .input-group");
+//         $(inputGroup[inputGroup.length-1]).after(item);
+         $(inputGroup[inputGroup.length-1]).after($(inputGroup[inputGroup.length-1]).clone());
+         var inputs = $(inputGroup[inputGroup.length-1]).next().find("input");
+         $(inputs).each(function(index){
+             $(this).val("");
+         });
+     });
+     
+     $(document).on("click", "#add_guidelines", function(){
+         var item = '<div class="input-group"><div class="table-thing with-label widget uib_w_98 position" data-uib="app_framework/input" data-ver="2"><label class="narrow-control label-top-left">Name :</label><input class="wide-control" placeholder="Insert Name" type="text"></div><div class="table-thing with-label widget uib_w_75 position" data-uib="app_framework/input" data-ver="2"><label class="narrow-control label-top-left">Date of Receipt :</label><input class="wide-control" type="date"></div><div class="table-thing with-label widget uib_w_76 position" data-uib="app_framework/input" data-ver="2"><label class="narrow-control label-top-left">Author :</label><input class="wide-control" placeholder="Insert Author" type="text"></div><div class="table-thing with-label widget uib_w_77 position" data-uib="app_framework/input" data-ver="2"><label class="narrow-control label-top-left">Custodian :</label><input class="wide-control" placeholder="Insert Custodian" type="text"></div><div class="table-thing with-label widget uib_w_82 position" data-uib="app_framework/input" data-ver="2"><label class="narrow-control label-top-left">On-Site Location :</label><input class="wide-control" placeholder="Insert On-Site Location" type="text"></div><div class="table-thing with-label widget uib_w_83 position" data-uib="app_framework/input" data-ver="2"><label class="narrow-control label-top-left">Off-Site Location :</label><input class="wide-control" placeholder="Insert Off-Site Location" type="text"></div></div>';
+         
+         var inputGroup = $("#guidelines .input-group");
+//         $(inputGroup[inputGroup.length-1]).after(item);
+         $(inputGroup[inputGroup.length-1]).after($(inputGroup[inputGroup.length-1]).clone());
+         var inputs = $(inputGroup[inputGroup.length-1]).next().find("input");
+         $(inputs).each(function(index){
+             $(this).val("");
+         });
+     });
+     
      function saveInformations(){
          var inputs = $("#information .input-group input");
          
@@ -288,7 +360,10 @@ $(function(){
     if(localStorage.getItem("manualsCount") !== null){
         inputGroups = $("#manuals .input-group");
         for(i = 0; i < localStorage.getItem("manualsCount"); i++){
-            // inflate
+            if(i > 0){
+                $(inputGroups[i-1]).after($(inputGroups[i-1]).clone());
+                inputGroups = $("#manuals .input-group");
+            }
             inputs = $(inputGroups[i]).find("input");
             items = (localStorage.getItem("manual"+i)).split(",");
             for(j = 0; j < inputs.length; j++){
@@ -301,6 +376,10 @@ $(function(){
     if(localStorage.getItem("plansCount") !== null){
         inputGroups =$("#plans .input-group");
         for(i = 0; i < localStorage.getItem("plansCount"); i++){
+            if(i > 0){
+                $(inputGroups[i-1]).after($(inputGroups[i-1]).clone());
+                inputGroups = $("#manuals .input-group");
+            }
             // inflate
             inputs = $(inputGroups[i]).find("input");
             items = (localStorage.getItem("plan"+i)).split(",");
@@ -314,6 +393,10 @@ $(function(){
     if(localStorage.getItem("agreementsCount") !== null){
         inputGroups = $("#agreements .input-group");
         for(i = 0; i < localStorage.getItem("agreementsCount"); i++){
+            if(i > 0){
+                $(inputGroups[i-1]).after($(inputGroups[i-1]).clone());
+                inputGroups = $("#manuals .input-group");
+            }
             // inflate
             inputs = $(inputGroups[i]).find("input");
             items = (localStorage.getItem("agreement"+i)).split(",");
@@ -327,6 +410,10 @@ $(function(){
     if(localStorage.getItem("documentsCount") !== null){
         inputGroups = $("#documents .input-group");
         for(i = 0; i < localStorage.getItem("documentsCount"); i++){
+            if(i > 0){
+                $(inputGroups[i-1]).after($(inputGroups[i-1]).clone());
+                inputGroups = $("#manuals .input-group");
+            }
             // inflate
             inputs = $(inputGroups[i]).find("input");
             items = (localStorage.getItem("document"+i)).split(",");
@@ -340,6 +427,10 @@ $(function(){
     if(localStorage.getItem("proceduresCount") !== null){
         inputGroups = $("#procedures .input-group");
         for(i = 0; i < localStorage.getItem("proceduresCount"); i++){
+            if(i > 0){
+                $(inputGroups[i-1]).after($(inputGroups[i-1]).clone());
+                inputGroups = $("#manuals .input-group");
+            }
             // inflate
             inputs = $(inputGroups[i]).find("input");
             items = (localStorage.getItem("procedure"+i)).split(",");
@@ -353,6 +444,10 @@ $(function(){
     if(localStorage.getItem("guidelinesCount") !== null){
         inputGroups = $("#guidelines .input-group");
         for(i = 0; i < localStorage.getItem("guidelinesCount"); i++){
+            if(i > 0){
+                $(inputGroups[i-1]).after($(inputGroups[i-1]).clone());
+                inputGroups = $("#manuals .input-group");
+            }
             // inflate
             inputs = $(inputGroups[i]).find("input");
             items = (localStorage.getItem("guideline"+i)).split(",");
