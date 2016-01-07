@@ -2663,3 +2663,8 @@ body#afui .splt {
     background-attachment: scroll;
   }
 }
+@media all {
+  #afui .hide_add {
+    visibility: hidden;
+  }
+}
