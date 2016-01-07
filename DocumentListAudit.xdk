@@ -6,11 +6,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "jsapp/template-blank-cordova-ad-project/sample.zip",
       "projectGuid": "f081eba5-22e4-4e7c-9010-585b8dea3d27",
-<<<<<<< HEAD
-      "lastModifiedDate": 1452161201195,
-=======
-      "lastModifiedDate": 1452162599497,
->>>>>>> 2e3ad1159ec8192048f1f8cc47fb14640ff6cd89
+      "lastModifiedDate": 1452189529517,
       "creationDate": 1452067249685
     },
     "XDK-app-designer": "true",
@@ -86,8 +82,8 @@
           "android-installLocation": "auto"
         },
         "isActive_": true,
-        "appName_": "DocumentListAuditVcrosswalk",
-        "appID_": "xdk.audit.si.documentlistcrosswalk",
+        "appName_": "DocumentListAudit",
+        "appID_": "xdk.audit.si.documentlist",
         "appAccess_": {
           "mode": "legacy",
           "network": [
@@ -102,17 +98,10 @@
         "excludedLibraries_": "",
         "cordovaCLIVersion_": "5.1.1",
         "crosswalkVersion_": "15",
-<<<<<<< HEAD
-        "appVersion_": "0.0.1",
+        "appVersion_": "0.0.6",
         "appAuthor_": "Intel XDK",
         "appDescription_": "Template to develop a Cordova mobile web app using the App Designer UI editor.",
-        "appVersionCode_": "1"
-=======
-        "appVersion_": "0.0.4",
-        "appAuthor_": "Intel XDK",
-        "appDescription_": "Template to develop a Cordova mobile web app using the App Designer UI editor.",
-        "appVersionCode_": "4"
->>>>>>> 2e3ad1159ec8192048f1f8cc47fb14640ff6cd89
+        "appVersionCode_": "6"
       },
       "Android": {
         "platform_": "android",
@@ -124,8 +113,8 @@
           "android-installLocation": "auto"
         },
         "isActive_": true,
-        "appName_": "DocumentListAuditApp",
-        "appID_": "xdk.audit.si.documentlistapp",
+        "appName_": "DocumentListAudit",
+        "appID_": "xdk.audit.si.documentlist",
         "appAccess_": {
           "mode": "legacy",
           "network": [
@@ -140,10 +129,10 @@
         "excludedLibraries_": "",
         "cordovaCLIVersion_": "5.1.1",
         "crosswalkVersion_": "14",
-        "appVersion_": "0.0.3",
+        "appVersion_": "0.0.7",
         "appAuthor_": "Intel XDK",
         "appDescription_": "Template to develop a Cordova mobile web app using the App Designer UI editor.",
-        "appVersionCode_": "3"
+        "appVersionCode_": "7"
       },
       "iOS": {
         "platform_": "ios",
