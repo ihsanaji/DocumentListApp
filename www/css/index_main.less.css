@@ -366,6 +366,9 @@ body#afui .splt {
     margin-bottom: 10px;
   }
 }
+.position {
+  width: 100%;
+}
 @media all {
   #afui .tengah p {
     text-align: center;
@@ -409,4 +412,32 @@ body#afui .splt {
 #afui .button-grouped,
 #afui .button-grouped > .d-margins {
   margin: 0;
+}
+@media all {
+  #afui .latar .panel {
+    background-color: #d9edf7;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}
+@media all {
+  #afui .latar_verified .panel {
+    background-color: #d9edf7;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}
+@media all {
+  #afui .lebar > .narrow-control {
+    text-align: left;
+  }
+}
+@media all {
+  #afui .button_main {
+    height: 60px !important;
+    width: 60px !important;
+    border-radius: 100% !important;
+  }
 }

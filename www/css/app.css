@@ -42,84 +42,61 @@ body {
     background: white ;
     color: black ;
 }
+/*
+#mainpage {
+    overflow-y: scroll !important;
+    max-height: 100vh !important;
+    verticalScroll:true;
+    horizontalScroll:false;
+    autoEnable:true;
+}*/
 
 #mainpage {
-    height: auto;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto !important;
+    max-height: 100% !important;
 }
 
 #information {
-    height: auto;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto !important;
+    max-height: 100% !important;
+}
+
+#about {
+    overflow-y: auto !important;
+    max-height: 100% !important;
 }
 
 #manuals {
-    height: auto;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto !important;
+    max-height: 100% !important;
 }
 
 #plans {
-    height: auto;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto !important;
+    max-height: 100% !important;
 }
 
 #agreements {
-    height: auto;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto !important;
+    max-height: 100% !important;
 }
 
 #documents {
-    height: auto;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto !important;
+    max-height: 100% !important;
 }
 
 #procedures {
-    height: auto;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto !important;
+    max-height: 100% !important;
 }
 
 #guidelines{
-    height: auto;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto !important;
+    max-height: 100% !important;
 }
 
+#verified{
+    overflow-y: auto !important;
+    max-height: 100% !important;
+}
